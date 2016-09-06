@@ -1,8 +1,8 @@
 {
   "presets":["es2015","stage-0"],
   "plugins":[
-    ["resolver", {
-      "resolveDirs": ["src"]
+    ["module-resolver", {
+        "root": ["./src"]
     }],
     "transform-decorators-legacy",
     "transform-class-properties",

@@ -1,11 +1,17 @@
 import express from 'express';
 import logger from 'morgan';
+import uuid from 'uuid';
 
 const PORT = process.env.PORT || '3000';
 
-let app = express();
+const app = express();
+const id = uuid.v4();
 
 app.use(logger('dev'));
+
+app.get('/id',(req,res)=>{
+  res.send(id);
+});
 
 if (app.get('env') === 'development') {
 
