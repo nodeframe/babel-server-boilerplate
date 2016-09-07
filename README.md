@@ -1,1 +1,1 @@
-# babel-servr-boilerplate
+# babel-server-boilerplate
