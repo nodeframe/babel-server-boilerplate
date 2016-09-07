@@ -4,6 +4,7 @@ RUN mkdir -p /app
 WORKDIR /app
 ADD package.json /app/package.json
 ADD build /app/build
+RUN npm install --production
 
 EXPOSE 3000
 CMD ["npm","run","serve"]
