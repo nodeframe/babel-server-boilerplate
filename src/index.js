@@ -4,7 +4,6 @@ import logger from 'morgan';
 const PORT = process.env.PORT || '3000';
 
 const app = express();
-const id = uuid.v4();
 
 app.use(logger('dev'));
 
