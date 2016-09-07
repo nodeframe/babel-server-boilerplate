@@ -1,5 +1,6 @@
 {
   "root":true,
+  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "commonjs": true,
@@ -7,7 +8,7 @@
     "jest": true,
     "node": true
   },
-
+  "plugins":["async-await"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -32,6 +33,8 @@
   },
 
   "rules": {
+    "async-await/space-after-async": 2,
+    "async-await/space-after-await": 2,
     "array-callback-return": "warn",
     "default-case": ["warn", { "commentPattern": "^no default$" }],
     "dot-location": ["warn", "property"],
