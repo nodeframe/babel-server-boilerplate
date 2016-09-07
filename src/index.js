@@ -1,6 +1,5 @@
 import express from 'express';
 import logger from 'morgan';
-import uuid from 'uuid';
 
 const PORT = process.env.PORT || '3000';
 
