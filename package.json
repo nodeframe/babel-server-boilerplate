@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.14.0",
     "seneca": "^3.0.0",
     "seneca-amqp-transport": "^1.0.1",
     "seneca-transport": "^2.1.0"
